@@ -1,0 +1,19 @@
+// $primaryColor: #3f51b5; // INDIGO
+$primaryColor: #414141;
+$secondaryColor: #ffeb3b; // YELLOW
+
+@import "~vue-material/dist/theme/engine"; // Import the vue-material theme engine
+
+@include md-register-theme("default", (
+  primary: $primaryColor, // The primary color of your brand
+  accent: $secondaryColor, // The secondary color of your brand 
+  theme: dark
+));
+
+@include md-register-theme("bottom-bar-dark", (
+  primary: white,
+  accent: black,
+  theme: dark
+));
+
+@import "~vue-material/dist/theme/all"; // Apply the theme

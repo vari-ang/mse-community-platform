@@ -1,0 +1,63 @@
+$breakpoint-xxsmall: 136px !default; // smallest watch screen
+$breakpoint-xsmall: 320px !default; // smallest device screen
+$breakpoint-small: 600px !default;
+$breakpoint-medium: 960px !default;
+$breakpoint-large: 1280px !default;
+$breakpoint-xlarge: 1920px !default;
+
+@mixin layout-xsmall {
+    @media (max-width: #{$breakpoint-xsmall}) {
+      @content;
+    }
+  }
+  
+  @mixin layout-small {
+    @media (max-width: #{$breakpoint-small - 1px}) {
+      @content;
+    }
+  }
+  
+  @mixin layout-medium {
+    @media (max-width: #{$breakpoint-medium - 1px}) {
+      @content;
+    }
+  }
+  
+  @mixin layout-large {
+    @media (max-width: #{$breakpoint-large - 1px}) {
+      @content;
+    }
+  }
+  
+  @mixin layout-xlarge {
+    @media (min-width: #{$breakpoint-large - 1px}) {
+      @content;
+    }
+  }
+  
+  // Small and up INCLUDES the size on the breakpoint.
+  // E.g: md-hide-small-and-up: includes small and beyond 
+  
+  @mixin layout-xsmall-and-up {
+    @media (min-width: #{$breakpoint-xxsmall + 0px}) {
+      @content;
+    }
+  }
+  
+  @mixin layout-small-and-up {
+    @media (min-width: #{$breakpoint-xsmall + 0px}) {
+      @content;
+    }
+  }
+  
+  @mixin layout-medium-and-up {
+    @media (min-width: #{$breakpoint-small + 0px}) {
+      @content;
+    }
+  }
+  
+  @mixin layout-large-and-up {
+    @media (min-width: #{$breakpoint-medium + 0px}) {
+      @content;
+    }
+  }
