@@ -1,7 +1,5 @@
-# Stonary Nuxt
-Stonary is a web application run that helps the Micro and Small Enterprises (MSEs), especially those that have not been digitalized to increase the reach of consumers, and make it easier for consumers to find various attractive MSEs, goods and services around them. This platform is run by community. You can join as a contributor to post anything about MSEs near you to help them reach more consumers.
-
-This project is a Nuxt.js Universal App with SSR via Firebase Functions and Firebase Hosting.
+# Micro and Small Enterprises Community Platform
+This project is a web app built using Nuxt.js Universal App with SSR via Firebase Functions and Firebase Hosting that helps the Micro and Small Enterprises (MSEs), especially those that have not been digitalized to increase the reach of consumers, and make it easier for consumers to find various attractive MSEs, goods and services around them. This platform is run by community. You can join as a contributor to post anything about MSEs near you to help them reach more consumers.
 
 ---
 
